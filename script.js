@@ -50,3 +50,5 @@ window.addEventListener('resize', ControlWidth);
 
 
 //Díky tomuto může fungovat animace, když se přidává nebo odebírá přidaná třída do elementu.
+
+

@@ -5,7 +5,7 @@ body{
 }
 
 main{
-  background-color: #fa2206;
+  background-color: rgb(66, 64, 68);
   
   
 }
@@ -16,6 +16,8 @@ header {
     box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
     position: relative;
     background-color: #ffd903;
+    position: fixed;
+    z-index: 20;
   }
   header .wrapper {
     max-width: 1300px;
@@ -117,7 +119,7 @@ main{
 }
 
 footer{
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(117, 117, 117);
     min-height: 500px;
 }
 
@@ -154,6 +156,15 @@ footer{
     width: 35px;
 }
 
+
+img {
+  transition: ease-in,1s;
+}
+
+img:hover {
+  transform: scale(1.2); 
+}
+
 svg{
     transition: 0.5s ease;
     width: 50px;
@@ -161,7 +172,7 @@ svg{
 }
 
 svg:hover{
-    fill: rgb(218, 27, 27);
+    fill: #ffd903;
 }
 
 .obrazky{
@@ -170,6 +181,26 @@ svg:hover{
     gap: 25px;
     padding: 50px;
 }
+
+.doba ul{
+  color: white;
+}
+
+.doba h1{
+  color: white;
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kontakt h1{
+  color: white;
+}
+
+.kontakt ul{
+  color: white;
+}
+
 
 .kontakt ul{
     display: flex;
@@ -182,17 +213,23 @@ svg:hover{
     height: 100%;
     justify-content: flex-start;
     margin-right: 100px;
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
 .doba ul{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    list-style-type: none;
-    gap: 2px;
-    padding-right: 250px;
-    font-size: larger;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 2px;
+  padding-right: 250px;
+  font-size: larger;
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     
 }
 
@@ -202,27 +239,34 @@ svg:hover{
 }
 
 .kontakt h1{
-    display: flex;
-    padding-left: 310px;
+  display: flex;
+  padding-left: 310px;
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .auta {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
+  padding-bottom: 80px;
 }
 
 .auto {
   display: flex;
-  flex-direction: column-reverse;
   align-items: center;
-  background-color: #fff;
-  width: 50%;
+  flex-direction: column-reverse;
+  background-color: #918c8c;
+  width: 55%;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+
+
 
 .auto img {
   width: 100%;
@@ -231,9 +275,20 @@ svg:hover{
 
 .auto h1 {
   margin: 20px 0;
+  font-size: 70px;
+  position: absolute;
+  color:white;
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .auto ul {
   list-style-type: none;
   padding: 0;
 }
+
+
+
+
+
